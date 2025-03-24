@@ -68,6 +68,22 @@ const apiResponse = getStockData()
         <div class="flex-1 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0">
           <h1 class="text-3xl font-bold text-gray-800">Welcome to the Dashboard</h1>
           <p class="mt-2 text-gray-600">Track your investments and financial data here.</p>
+
+           <!-- Market Overview Section -->
+    <div class="mt-6">
+        <h2 class="text-xl font-bold text-gray-800">Market Overview</h2>
+        <h6 class="mt-2 text-sm text-gray-600">Live market indices and commodities</h6>
+
+        <!-- Horizontal List of Markets -->
+        <div class="flex flex-col lg:flex-row justify-between mt-4 space-y-4 lg:space-y-0">
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">S&P 500</p>
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">Dow Jones</p>
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">Nasdaq</p>
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">Bitcoin</p>
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">Ethereum</p>
+          <p class="text-center lg:w-1/6 px-4 py-2 bg-gray-200 rounded-md text-sm text-gray-700">Gold</p>
+        </div>
+      </div>
         </div>
 
         <!-- Watchlist (Stacked on Small Screens) -->
