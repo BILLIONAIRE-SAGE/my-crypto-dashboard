@@ -1,0 +1,5 @@
+import axios from "axios";
+
+const res = axios.get(url);
+const data = res.data
+console.log(data)
