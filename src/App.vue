@@ -83,69 +83,187 @@ const apiResponse = getStockData()
   </div>
 
 
-
-  <div>
-    <h2>Stocks</h2>
-    <p>TTop performing stocks today</p>
-
+  <div class="p-4">
+    <!-- Stocks Section -->
     <div>
-      <p>Name</p>
-      <p>Price</p>
-      <p>Change</p>
-      <p>% Change</p>
-      <p>Volume (24h)</p>
-    </div>
+      <h2 class="text-2xl font-bold text-gray-800">Stocks</h2>
+      <p class="mt-2 text-gray-600">Top performing stocks today</p>
 
-    <div>
-      <p>Apple Inc.<br>AAPL</p>
-      <p>Microsoft Corporation <br>MSFT</p>
-      <p>Alphabet Inc. <br>GOOGL</p>
-      <p>Amazon.com, Inc. <br>AMZN</p>
-      <p>Tesla, Inc.<br>TSLA</p>
-    </div>
+      <!-- Table Headers -->
+      <div class="flex flex-col lg:flex-row justify-between mt-4 border-b border-gray-300 pb-2">
+        <p class="font-semibold text-gray-700 lg:w-1/5">Name</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Price</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Change</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">% Change</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Volume (24h)</p>
+      </div>
 
+      <!-- Stock Entries -->
+      <div class="mt-4 space-y-4">
+        <!-- Apple Inc. -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Apple Inc.<br><span class="text-sm text-gray-500">AAPL</span></p>
+          <p class="text-gray-800 lg:w-1/5">$150.25</p>
+          <p class="text-green-600 lg:w-1/5">+2.50</p>
+          <p class="text-green-600 lg:w-1/5">+1.69%</p>
+          <p class="text-gray-800 lg:w-1/5">50M</p>
+        </div>
+
+        <!-- Microsoft Corporation -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Microsoft Corporation<br><span class="text-sm text-gray-500">MSFT</span></p>
+          <p class="text-gray-800 lg:w-1/5">$300.50</p>
+          <p class="text-red-600 lg:w-1/5">-1.75</p>
+          <p class="text-red-600 lg:w-1/5">-0.58%</p>
+          <p class="text-gray-800 lg:w-1/5">40M</p>
+        </div>
+
+        <!-- Alphabet Inc. -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Alphabet Inc.<br><span class="text-sm text-gray-500">GOOGL</span></p>
+          <p class="text-gray-800 lg:w-1/5">$2,800.00</p>
+          <p class="text-green-600 lg:w-1/5">+10.25</p>
+          <p class="text-green-600 lg:w-1/5">+0.37%</p>
+          <p class="text-gray-800 lg:w-1/5">30M</p>
+        </div>
+
+        <!-- Amazon.com, Inc. -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Amazon.com, Inc.<br><span class="text-sm text-gray-500">AMZN</span></p>
+          <p class="text-gray-800 lg:w-1/5">$3,400.00</p>
+          <p class="text-red-600 lg:w-1/5">-5.00</p>
+          <p class="text-red-600 lg:w-1/5">-0.15%</p>
+          <p class="text-gray-800 lg:w-1/5">25M</p>
+        </div>
+
+        <!-- Tesla, Inc. -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Tesla, Inc.<br><span class="text-sm text-gray-500">TSLA</span></p>
+          <p class="text-gray-800 lg:w-1/5">$700.00</p>
+          <p class="text-green-600 lg:w-1/5">+15.00</p>
+          <p class="text-green-600 lg:w-1/5">+2.19%</p>
+          <p class="text-gray-800 lg:w-1/5">60M</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div>
-    <h2>Cryptocurrencies</h2>
-    <p>Top cryptocurrencies by market cap</p>
-
+  <div class="p-4">
+    <!-- Cryptocurrencies Section -->
     <div>
-      <p>Name</p>
-      <p>Price</p>
-      <p>24h Change</p>
-      <p>Market Cap</p>
-      <p>Volume (24h)</p>
-    </div>
+      <h2 class="text-2xl font-bold text-gray-800">Cryptocurrencies</h2>
+      <p class="mt-2 text-gray-600">Top cryptocurrencies by market cap</p>
 
-    <div>
-      <p>Bitcoin <br>BTC</p>
-      <p>Ethereum <br>ETH</p>
-      <p>Binance Coin <br>BNB</p>
-      <p>Solana <br>SOL</p>
-      <p>Cardano<br>ADA</p>
+      <!-- Table Headers -->
+      <div class="flex flex-col lg:flex-row justify-between mt-4 border-b border-gray-300 pb-2">
+        <p class="font-semibold text-gray-700 lg:w-1/5">Name</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Price</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">24h Change</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Market Cap</p>
+        <p class="font-semibold text-gray-700 lg:w-1/5">Volume (24h)</p>
+      </div>
+
+      <!-- Cryptocurrency Entries -->
+      <div class="mt-4 space-y-4">
+        <!-- Bitcoin -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Bitcoin<br><span class="text-sm text-gray-500">BTC</span></p>
+          <p class="text-gray-800 lg:w-1/5">$27,000</p>
+          <p class="text-green-600 lg:w-1/5">+3.5%</p>
+          <p class="text-gray-800 lg:w-1/5">$520B</p>
+          <p class="text-gray-800 lg:w-1/5">20B</p>
+        </div>
+
+        <!-- Ethereum -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Ethereum<br><span class="text-sm text-gray-500">ETH</span></p>
+          <p class="text-gray-800 lg:w-1/5">$1,900</p>
+          <p class="text-red-600 lg:w-1/5">-1.2%</p>
+          <p class="text-gray-800 lg:w-1/5">$230B</p>
+          <p class="text-gray-800 lg:w-1/5">15B</p>
+        </div>
+
+        <!-- Binance Coin -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Binance Coin<br><span class="text-sm text-gray-500">BNB</span></p>
+          <p class="text-gray-800 lg:w-1/5">$300</p>
+          <p class="text-green-600 lg:w-1/5">+2.1%</p>
+          <p class="text-gray-800 lg:w-1/5">$50B</p>
+          <p class="text-gray-800 lg:w-1/5">10B</p>
+        </div>
+
+        <!-- Solana -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Solana<br><span class="text-sm text-gray-500">SOL</span></p>
+          <p class="text-gray-800 lg:w-1/5">$25</p>
+          <p class="text-red-600 lg:w-1/5">-0.8%</p>
+          <p class="text-gray-800 lg:w-1/5">$9B</p>
+          <p class="text-gray-800 lg:w-1/5">5B</p>
+        </div>
+
+        <!-- Cardano -->
+        <div class="flex flex-col lg:flex-row justify-between items-center border-b border-gray-300 pb-2">
+          <p class="text-gray-800 lg:w-1/5">Cardano<br><span class="text-sm text-gray-500">ADA</span></p>
+          <p class="text-gray-800 lg:w-1/5">$0.50</p>
+          <p class="text-green-600 lg:w-1/5">+1.5%</p>
+          <p class="text-gray-800 lg:w-1/5">$18B</p>
+          <p class="text-gray-800 lg:w-1/5">8B</p>
+        </div>
+      </div>
     </div>
-    
   </div>
 
 
-  <div>
-    <h2>Market News</h2>
-    <p>Latest financial news and updates</p>
+  <div class="p-4">
+    <!-- Market News Section -->
+    <div>
+      <h2 class="text-2xl font-bold text-gray-800">Market News</h2>
+      <p class="mt-2 text-gray-600">Latest financial news and updates</p>
 
-    <h3>Fed Signals Potential Rate Cuts in 2024 as Inflation Cools</h3>
-    <p>Financial Times . 2 hours ago . Economy</p>
+      <!-- News Entry 1 -->
+      <div class="mt-6 border-b border-gray-300 pb-4">
+        <h3 class="text-lg font-bold text-gray-800">Fed Signals Potential Rate Cuts in 2024 as Inflation Cools</h3>
+        <p class="mt-2 text-gray-600 flex items-center">
+          Financial Times . 2 hours ago .
+          <span class="ml-2 px-2 py-1 bg-gray-200 rounded-md text-sm text-gray-700">Economy</span>
+        </p>
+      </div>
 
-    <h3>Apple Unveils New AI Features for iPhone and Mac</h3>
-    <p>TechCrunch . 4 hours ago . Technology</p>
+      <!-- News Entry 2 -->
+      <div class="mt-6 border-b border-gray-300 pb-4">
+        <h3 class="text-lg font-bold text-gray-800">Apple Unveils New AI Features for iPhone and Mac</h3>
+        <p class="mt-2 text-gray-600 flex items-center">
+          TechCrunch . 4 hours ago .
+          <span class="ml-2 px-2 py-1 bg-gray-200 rounded-md text-sm text-gray-700">Technology</span>
+        </p>
+      </div>
 
-    <h3>Bitcoin Surges Past $42,000 as Institutional Adoption Grows</h3>
-    <p>CoinDesk . 6 hours ago . Cryptocurrency</p>
+      <!-- News Entry 3 -->
+      <div class="mt-6 border-b border-gray-300 pb-4">
+        <h3 class="text-lg font-bold text-gray-800">Bitcoin Surges Past $42,000 as Institutional Adoption Grows</h3>
+        <p class="mt-2 text-gray-600 flex items-center">
+          CoinDesk . 6 hours ago .
+          <span class="ml-2 px-2 py-1 bg-gray-200 rounded-md text-sm text-gray-700">Cryptocurrency</span>
+        </p>
+      </div>
 
-    <h3>Tesla Announces New Gigafactory in Asia, Shares Jump 3%</h3>
-    <p>Reuters . 8 hours ago . Automotive</p>
+      <!-- News Entry 4 -->
+      <div class="mt-6 border-b border-gray-300 pb-4">
+        <h3 class="text-lg font-bold text-gray-800">Tesla Announces New Gigafactory in Asia, Shares Jump 3%</h3>
+        <p class="mt-2 text-gray-600 flex items-center">
+          Reuters . 8 hours ago .
+          <span class="ml-2 px-2 py-1 bg-gray-200 rounded-md text-sm text-gray-700">Automotive</span>
+        </p>
+      </div>
 
-    <h3>Oil Prices Fall on Concerns About Global Demand</h3>
-    <p>Bloomberg . 10 hours ago . Commodities</p>
+      <!-- News Entry 5 -->
+      <div class="mt-6 border-b border-gray-300 pb-4">
+        <h3 class="text-lg font-bold text-gray-800">Oil Prices Fall on Concerns About Global Demand</h3>
+        <p class="mt-2 text-gray-600 flex items-center">
+          Bloomberg . 10 hours ago .
+          <span class="ml-2 px-2 py-1 bg-gray-200 rounded-md text-sm text-gray-700">Commodities</span>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
